@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(planet-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style for Nav bar */
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+} 
+
+/* Style for Nav bar ( <div class="logo"> )  */
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+
+/* Style for Nav bar ( <div class="menu"> ) */
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* Style for Nav bar ( for anchor tags ) */
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:first-child{
+    color: #00b894 ;
+}
+
+/* -- through this the content will come in center -- */
+main{
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* -- here designing the h3 of section -- */
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* -- here designing the h1 of section -- */
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+/* -- here designing the "p" of section -- */
+section p{
+    font-size: 27px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* -- here designing the "p" of section -- */
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+/* -- class inside the section (designing the button one ) */
+section .btnone{
+    background: #00b894;
+    color: white;
+}
+.btnone:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* designing the button two */
+section .btntwo{
+    background: #fff;
+    color: #000;
+}
+.btntwo:hover{
+    background: #00b894;
+    color: white;
+}
+
+
+.change_content::after{
+    content: '';
+    animation: changetext 12s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext {
+    0%{content: "Giza Pyramids";}
+    20%{content: "Great Wall of China";}
+    35%{content: "Taj Mahal";}
+    50%{content: "Colosseum";}
+    70%{content: "Chichén Itzá";}
+    90%{content: "Machu Picchu";}
+    100%{content: "Petra";}
+    
+}
